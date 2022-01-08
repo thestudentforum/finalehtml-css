@@ -1,0 +1,636 @@
+@import url(../../../../../css/fonts.css);
+
+html,body {
+    margin: 0%;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+/*--------------Globel-Classes--------------*/
+a {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+}
+
+.flex-row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+ul {
+    list-style: none;
+}
+
+h1 {
+    font-family: ZenOldMichino;
+    font-size: 1.5rem;
+}
+
+h2 {
+    font-family: ZenOldMichino;
+}
+
+h3 {
+    font-family: ZenOldMichino;
+    font-size: 1.5rem;
+}
+
+button.btn {
+    border: none;
+    border-radius: 2rem;
+    padding: 1rem 3rem;
+    font-size: 1rem;
+    font-family: ZenOldMichino;
+    cursor: pointer;
+}
+
+span {
+    font-family: ZenOldMichino;
+}
+
+.container {
+    margin: 0 5vw;
+}
+
+.text-gray {
+    color: rgb(139, 139, 139);
+    margin: 0rem 1.5rem;
+}
+
+footer .footer .container p {
+    color: white;
+}
+hr {
+    width: 43rem;
+}
+
+fieldset {
+    text-align: center;
+    height: 20rem;
+    border: .2rem solid black;
+}
+/*-------x-------Globel-Classes------x--------*/
+
+/*---------------nav-bar-----------------*/
+
+.nav {
+    background: white;
+    overflow: hidden;
+    transition: height 1s ease-in-out;
+}
+
+.nav .nav-menu {
+    justify-content: space-between;
+}
+
+.nav .toggle-collapse {
+    position: absolute;
+    top: 0px;
+    width: 90%;
+    cursor: pointer;
+    display: none;
+}
+
+.nav .toggle-collapse .toggle-icons {
+    display: flex;
+    justify-content: flex-end;
+    padding: 1.7rem 0;
+}
+
+.nav .toggle-collapse .toggle-icons i {
+    font-size: 1.4rem;
+    color: rgb(0, 0, 0) ;
+}
+
+.collapse {
+    height: 20rem;
+}
+.nav .nav-items {
+    display: flex;
+    margin: 0;
+}
+
+.nav .nav-items .nav-link {
+    padding: 1.6rem 1rem;
+    position: relative;
+    font-family: ZenOldMichino;
+    font-size: 1.1rem;
+}
+
+.nav .nav-items .nav-link a{
+    font-size: 1.2rem;
+    color: rgb(66, 66, 66);
+}
+
+.nav .nav-items .nav-link a:hover {
+    background: linear-gradient(to right, #373b44, #4286f4);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.nav .nav-items .nav-link .active {
+    background: linear-gradient(to right, #373b44, #f44242);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.nav .nav-brand a{
+    font-size: 1.6rem;
+    margin: 0rem 2rem;
+    display: block;
+    font-family: Anton;
+    background: linear-gradient(to right, #373b44, #4286f4);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-align: center;
+}
+
+.nav .social {
+    margin: 1.4rem 1.2rem;
+
+}
+
+.nav .social i {
+padding: 0.2rem;
+}
+
+.nav .social i:hover {
+    color: rgb(211, 206, 206);
+}
+/*------x---------nav-bar----------x-------*/
+
+/*----------------Main-Content--------------------*/
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style-type: none;
+    text-decoration: none;
+    font-family: sans-serif;
+}
+ 
+.sidebar {
+    width: 15rem;
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 100%;
+    background: #4286f4;
+    display: none;
+}
+
+.sidebar .sidebar-menu li{
+    width: 100%;
+    margin-bottom: 1.5rem;
+    position: relative;
+    top: 5rem;
+    left: 2rem;
+}
+
+.main-content {
+    margin-left: 20rem;
+}
+
+.board-content {
+    display: flex;
+    justify-content: space-around;
+    padding: 1rem;
+}
+
+.ext-btn {
+    position: fixed;
+    bottom: 2rem;
+}
+
+/*---------------------Wrapper--------------------------------*/
+
+.search-wrapper {
+    border: 1px solid black;
+    border-radius: .5rem;
+    height: 2rem;
+    display: flex;
+    align-items: center;
+}
+
+.search-wrapper input {
+    height: 50%;
+    padding: .1rem;
+    border: none;
+    outline: none;
+}
+/*---------------------Wrapper--------------------------------*/
+
+/*---------------------Cards----------------------------------------*/
+.cards {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 2rem;
+    margin-top: 5rem;
+}
+
+.card-single {
+    display: flex;
+    justify-content: space-between;
+    background: whitesmoke;
+    padding: 2rem;
+    border-radius: 2rem;
+}
+
+.tabs {
+    margin: 5rem 10rem;
+}
+/*---------------------Cards----------------------------------------*/
+
+/*---------------------Announcement--------------------------------*/
+
+.tabs .announcements .header{
+    display: grid;
+    grid-template-columns: repeat(3,2fr);
+
+}
+.Announce-tab h2 {
+    position: relative;
+    left: 18rem;
+    margin: 2rem 0rem;
+}
+
+.Announce-tab {
+    display: none;
+}
+
+.announcements .newer .text {
+    display: flex;
+    margin: 2rem 4rem;
+    position: relative;
+    background: rgb(139, 139, 139);
+    border-radius: .4rem;
+    width: 14rem;
+    height: 4rem;
+}
+
+.announcements .newer .text p{
+    color: green;
+    cursor: pointer;
+    left: 0;
+    margin: 1rem 1rem;
+}
+
+.announcements .newer .text span {
+    position: relative;
+    background: green;
+    color: white;
+    width: 2.5rem;
+    left: 2.2rem;
+}
+
+.announcements .older .text {
+    display: flex;
+    margin: 2rem 4rem;
+    position: relative;
+    background: rgb(139, 139, 139);
+    border-radius: .4rem;
+    width: 15rem;
+    height: 4rem;
+
+}
+
+.announcements .older .text p{
+    color: red;
+    cursor: pointer;
+    margin: 1rem 1rem;
+}
+
+.announcements .older .text span {
+    position: relative;
+    background: red;
+    color: white;
+    width: 2.5rem;
+    left: 2.5rem;
+}
+
+.announcements .inbox {
+    display: none;
+    position: relative;
+    left: -14rem;
+ }
+
+ .announcements .inbox .items {
+     border: 1px solid black;
+     width: 40rem;
+     height: 40rem;
+ }
+ .announcements .inbox button {
+     background: none;
+     border: none;
+     outline-style: none;
+     position: relative;
+     text-align: center;
+     font-size: 1.5rem;
+     cursor: pointer;
+
+ }
+ .announcements .inbox h2 {
+     position: relative;
+     text-align: center;
+     top: 20rem;
+     left: 0rem;
+     cursor: pointer;
+ }
+ .announcements .write-announcement textarea{
+    display: block;
+    position: relative;
+    top: -28rem;
+    left: 30rem;
+    width: 24rem;
+    height: 25rem;
+    margin: 0;
+ }
+ .announcements .write-announcement button {
+     position: relative;
+     top: -30.5rem;
+     left: 30.5rem;
+     background: green;
+     outline-style: none;
+     border: none;
+     cursor: pointer;
+     width: 6rem;
+     height: 2rem;
+ }
+ .announcements .write-announcement .content {
+     display: none;
+ }
+
+ /*--------X-------------Announcement---------------------X-----------*/
+
+ /*----------------------Message's--------------------------------------*/
+ .tabs .messages .header{
+    display: grid;
+    grid-template-columns: repeat(3,2fr);
+    position: relative;
+    left: -12rem;
+
+}
+.message-tab h2 {
+    position: relative;
+    left: 18rem;
+    margin: 2rem 0rem;
+}
+
+.message-tab {
+    display: none;
+}
+
+.messages .newer .text {
+    display: flex;
+    margin: 2rem 4rem;
+    position: relative;
+    background: rgb(139, 139, 139);
+    border-radius: .4rem;
+    width: 14rem;
+    height: 4rem;
+}
+
+.messages .newer .text p{
+    color: green;
+    cursor: pointer;
+    left: 0;
+    margin: 1rem 1rem;
+}
+
+.messages .newer .text span {
+    position: relative;
+    background: green;
+    color: white;
+    width: 2.5rem;
+    left: 4rem;
+}
+
+.messages .older .text {
+    display: flex;
+    margin: 2rem 4rem;
+    position: relative;
+    background: rgb(139, 139, 139);
+    border-radius: .4rem;
+    width: 15rem;
+    height: 4rem;
+
+}
+
+.messages .older .text p{
+    color: red;
+    cursor: pointer;
+    margin: 1rem 1rem;
+}
+
+.messages .older .text span {
+    position: relative;
+    background: red;
+    color: white;
+    width: 2.5rem;
+    left: 6rem;
+}
+
+.messages .sent .text {
+    display: flex;
+    margin: 2rem 4rem;
+    position: relative;
+    background: rgb(139, 139, 139);
+    border-radius: .4rem;
+    width: 15rem;
+    height: 4rem;
+
+}
+
+.messages .sent .text p{
+    color: rgb(187, 255, 0);
+    cursor: pointer;
+    margin: 1rem 1rem;
+}
+
+.messages .sent .text span {
+    position: relative;
+    background: rgb(200, 255, 0);
+    color: white;
+    width: 2.5rem;
+    left: 6rem;
+}
+
+.messages .inbox {
+    display: none;
+    position: relative;
+    left: -14rem;
+ }
+
+ .messages .inbox .items {
+     border: 1px solid black;
+     width: 40rem;
+     height: 40rem;
+ }
+ .messages .inbox button {
+     background: none;
+     border: none;
+     outline-style: none;
+     position: relative;
+     text-align: center;
+     font-size: 1.5rem;
+     cursor: pointer;
+
+ }
+ .messages .inbox h2 {
+     position: relative;
+     text-align: center;
+     top: 20rem;
+     left: 0rem;
+     cursor: pointer;
+ }
+ .messages .write-message textarea{
+    display: block;
+    position: relative;
+    top: -28rem;
+    left: 30rem;
+    width: 24rem;
+    height: 25rem;
+    margin: 0;
+ }
+ .messages .write-message button {
+     position: relative;
+     top: -30.5rem;
+     left: 30.5rem;
+     background: green;
+     outline-style: none;
+     border: none;
+     cursor: pointer;
+     width: 6rem;
+     height: 2rem;
+ }
+ .messages .write-message .content {
+     display: none;
+ }
+
+ /*--------X-------------Message's-----------------------X---------------*/
+
+/*---------------------Polls-------------------------------------*/
+.Polls h2 {
+    position: relative;
+    text-align: center;
+}
+
+.initiate button {
+    background: none;
+    outline-style: none;
+    border: none;
+    cursor: pointer;
+}
+.initiate button span {
+    position: relative;
+    font-size: 2rem;
+    top: 4rem;
+}
+/*---------X------------Polls-------------------------X------------*/
+ 
+ .header button {
+     outline-style: none;
+     background: none;
+     border: none;
+ }
+/*-------X---------Main-Content-------X-------------*/
+
+/*------------------------Site-Footer-------------------------*/
+
+footer .footer {
+    height: 40%;
+    background-color: rgb(37, 37, 37);
+    position: relative;
+}
+
+footer .footer .container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+footer .footer .container > div {
+    flex-grow: 1;
+    flex-basis: 0;
+    margin: 2rem .6rem;
+}
+
+footer .footer .container h2 {
+    color: white;
+}
+
+footer .footer .newsletter .form-element {
+    background: black;
+    display: inline-block;
+    padding: 2rem 1rem;
+    height: .5rem;
+}
+
+footer .footer .newsletter .form-element input {
+    padding: 0.5rem 0.7rem;
+    margin: -4rem 0rem;
+    border: none;
+    background: transparent;
+    color: white;
+    font-family: ZenOldMichino;
+    font-size: 1rem;
+    width: 70%;
+}
+
+footer .footer .newsletter .form-element span {
+    background: linear-gradient(to right, #373b44, #4286f4);
+    padding: .65rem 1.2rem;
+    margin: 0rem -0.5rem;
+    cursor: pointer;
+}
+
+footer .footer .facebook div > img {
+    display: inline;
+    width: 20%;
+    height: 50%;
+    margin: 0.3rem 0.4rem;
+}
+
+footer .footer .follow div i{
+    color: white;
+    padding: 0.4rem;
+}
+
+footer .footer .rights {
+    justify-content: center;
+    font-family: sans-serif;
+    color: grey;
+}
+
+footer .footer .move-up {
+    position: absolute;
+    right: 6%;
+    top: 40%;
+}
+
+footer .footer .move-up span {
+    color: black
+}
+
+footer .footer .move-up span:hover {
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+}
+/*---------x---------------Site-Footer-----------x--------------*/
+
+/*-------------View-Port-Less-Than-or-equal-to-750p-------------*/
+
+@media only screen and (max-width: 750px){
+    .nav .nav-menu, .nav .nav-items{
+        flex-direction: column;
+    }
+
+    .nav .toggle-collapse {
+        display: initial;
+    }
+}
+
+
+
+/*------x-------View-Port-Less-Than-or-equal-to-720p--------x-----*/

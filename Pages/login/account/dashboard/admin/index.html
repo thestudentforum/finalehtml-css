@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Forum | Home</title>
+    <!--Font-Awesome-Website-->
+    <link rel="stylesheet" href="../../../../../css/all.css">
+
+    <!--Owl-Carasuel--->
+    <link rel="stylesheet" href="../../../../../owl.carousel.min.css">
+    <link rel="stylesheet" href="../../../../../css/owl.theme.default.min.css">
+
+    <!--Custom style -->
+    <link rel="stylesheet" href="./css/style.css">
+
+</head>
+<body>
+
+    <!----------- Navigation---------------->
+    
+    <nav class="nav">
+        <div class="nav-menu flex-row">
+            <div class="nav-brand">
+                <a href="#" class="text-grey" onclick="sideMenuOpen()">The <br> Students Forum</a>
+            </div>
+
+            <div class="toggle-collapse">
+                <div class="toggle-icons">
+                    <i class="fas fa-bars"></i>
+                </div>
+                
+            </div>
+
+            <ul class="nav-items">
+            <li class="nav-link">
+                <a href="../../index.html"> <b>Home</b> </a>
+            </li>
+            <li class="nav-link">
+                <a href="../../Pages/sports&entertainment/index.html"> <b>Sports & Entertainment</b> </a>
+            </li>
+            <li class="nav-link">
+                <a href="../../Pages/programs&Accademics/index.html"> <b>Programs & Accademics</b> </a>
+            </li>
+            <li class="nav-link">
+                <a href="../../Pages/studentunion/index.html"> <b>Student Union</b> </a>
+            </li>
+            <li class="nav-link">
+                <a href="../../Pages/contact/index.html"> <b>Contact</b> </a>
+            </li>
+            <li class="nav-link">
+                <a href="../../Pages/about/index.html"> <b>About</b> </a>
+            </li>
+
+            </ul>
+            <div class="social text-gray">
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-whatsapp"></i></a>
+            </div>
+        </div>
+    </nav>
+    
+
+    <!----------- End Navigation---------------->
+
+    <!------------Main-Content------------------------>
+    <main>
+       <div class="sidebar" id="sidebar">
+        <div class="sidebar-brand">
+              <div class="sidebar-menu">
+                  <ul>
+                      <li>
+                          <a href="Active"><span class=""></span><span>Dashboard</span></a>
+                          <div class="icon">
+                            <span><i class="fas fa-tachometer"></i></span>
+                        </div>
+                      </li>
+                      <li>
+                          <a href="#" onclick="openAnnouncement()"><span class=""></span><span>Announce</span></a>
+                            <div class="icon">
+                                <span><i class="fas fa-bullhorn"></i></span>
+                            </div>
+                        </li>
+                      <li>
+                          <a href="#" onclick="openMessage()"><span class=""></span><span>Messages</span></a>
+                          <div class="icon">
+                            <span><i class="fas fa-envelope"></i></span>
+                        </div>
+                        </li>
+                      <li>
+                          <a href=""><span class=""></span><span>Polls</span></a>
+                          <div class="icon">
+                            <span><i class="fas fa-flag"></i></span>
+                        </div>
+                        </li>
+                      <li>
+                          <a href=""><span class=""></span><span>Task's</span></a>
+                          <div class="icon">
+                            <span><i class="fas fa-thumbtack"></i></span>
+                        </div>
+                        </li>
+                      <li>
+                          <div class="ext-btn">
+                            <a href="#" onclick="extiBar()"><span class=""></span><span>Exit</span></a>
+                            <div class="icon">
+                              <span><i class="fas fa-sign-out-alt"></i></span>
+                          </div>
+                          </div>
+                        </li>
+                  </ul>
+              </div>
+        </div>
+       </div> 
+       
+       <div class="main-content">
+           <div class="board-content">
+               <div class="search-wrapper">
+                   <span></span>
+                   <input type="search" placeholder="search here....">
+               </div>
+               <div class="user-wrapper">
+                   <h4>User ID : <span>bb085-502</span></h4>
+                   <h4>Category: <span>Student</span></h4>
+               </div>
+           </div>
+           <section>
+            <div class="cards">
+                <div class="card-single">
+                    <div>
+                        <h1>0</h1>
+                        <span>Announcements</span>
+                    </div>
+                    <div>
+                        <span><i class="fas fa-bullhorn"></i></span>
+                    </div>
+                </div>
+                <div class="card-single">
+                    <div>
+                        <h1>0</h1>
+                    <span>Messages</span>
+                    </div>
+                    <div>
+                        <span><i class="fas fa-envelope-open"></i></span>
+                    </div>
+                </div>
+                <div class="card-single">
+                    <div>
+                        <h1>0</h1>
+                    <span>Polls</span>
+                    </div>
+                    <div>
+                        <span><i class="fas fa-flag"></i></span>
+                    </div>
+                </div>
+                <div class="card-single">
+                    <div>
+                        <h1>0</h1>
+                    <span>Members</span>
+                    </div>
+                    <div>
+                        <span><i class="fas fa-users"></i></span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pannel-workspace">
+                <div class="tabs">
+                    <div class="Announce-tab" id="Announce">
+                        <h2>Announcements</h2>
+                    <div class="announcements">
+                        <div class="header">
+                            <div class="newer">
+                                <div class="text">
+                                    <button type="submit" onclick="openNewer()"><p>New Announcements</p></button>
+                                    <span>10</span>
+                                </div>
+                            </div>
+                            <div class="older">
+                                <div class="text">
+                                    <button type="submit" onclick="openOlder()"><p>Older Announcements</p></button>
+                                    <span>10</span>
+                                </div>
+                            </div>
+                        </div>
+                            <div class="inbox" id="newer"> 
+                                <div class="items">
+                                    <div class="container">
+                                        <form action="" id="">
+                                            <h2 onclick="openPannel()">Create New Announcements</h2>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="inbox" id="Older"> 
+                                <div class="items">
+                                    <div class="container">
+                                        <form action="" id="">
+                                            <button>Older</button>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="write-announcement">
+                                <div class="content" id="pannel">
+                                    <form action="">
+                                        <label for="write-announcement">
+                                            <textarea name="" id="" placeholder="write announcement here..." cols="30" rows="10"></textarea>
+                                        </label>
+                                        <button type="submit" onclick="send()">Announce</button>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="message-tab" id="message">
+                        <h2>Requests</h2>
+                    <div class="messages">
+                        <div class="header">
+                            <div class="newer">
+                                <div class="text">
+                                    <button type="submit" onclick="openNewerMessage()"><p>New Message's</p></button>
+                                    <span>10</span>
+                                </div>
+                            </div>
+                            <div class="older">
+                                <div class="text">
+                                    <button type="submit" onclick="openOlderMessage()"><p>Older Message's</p></button>
+                                    <span>10</span>
+                                </div>
+                            </div>
+                            <div class="sent">
+                                <div class="text">
+                                    <button type="submit" onclick="openSentMessage()"><p>Sent Message's</p></button>
+                                    <span>10</span>
+                                </div>
+                            </div>
+                        </div>
+                            <div class="inbox" id="newerMessage"> 
+                                <div class="items">
+                                    <div class="container">
+                                        <form action="" id="">
+                                            <h2 onclick="openPannel()">Write new message</h2>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="inbox" id="olderMessage"> 
+                                <div class="items">
+                                    <div class="container">
+                                        <form action="" id="">
+                                            <button>Older</button>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="inbox" id="sentMessage"> 
+                                <div class="items">
+                                    <div class="container">
+                                        <form action="" id="">
+                                            <button>Sent</button>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="write-message">
+                                <div class="content" id="messagePannel">
+                                    <form action="">
+                                        <label for="write-message">
+                                            <textarea name="" id="" placeholder="write message here..." cols="30" rows="10"></textarea>
+                                        </label>
+                                        <button type="submit" onclick="send()">Send</button>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="Polls" id="poll">
+                        <h2></h2>
+                    <div class="poll">
+                        <div class="initiate">
+                            <button type="submit"><span></span></button>
+                        </div>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+       </div>
+    </main>
+
+
+    <!------X------Main-Content----------X-------------->
+
+
+
+        <!-------------------Site-Footer------------------>
+        <footer class="footer">
+            <div class="footer">
+                <div class="container">
+                    <div class="about-us">
+                        <h2>About Us</h2>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente aspernatur aut dolore omnis magni, fugit tempora est iure! Pariatur nisi quae veniam laudantium dolore ab consectetur nam incidunt exercitationem. Reiciendis!
+                        </p>
+                    </div>
+                    <div class="newsletter">
+                        <h2>NewsLetter</h2>
+                        <p>Stay up to date with information</p>
+                        <div class="form-element">
+                            <input type="text" placeholder="Email"><span><i class="fas fa-chevron-right"></i></span>
+                        </div>
+                    </div>
+                    <div class="facebook">
+                       <h2>Facebook</h2>
+                       <div class="flex-row">
+                           <img src="../../../../../assets/poster-2.png" alt="poster-1">
+                           <img src="../../../../../assets/poster-2.png" alt="poster-1">
+                           <img src="../../../../../assets/poster-2.png" alt="poster-1">
+                           <img src="../../../../../assets/poster-2.png" alt="poster-1">
+                       </div>
+                       <div class="flex-row">
+                        <img src="../../../../../assets/poster-2.png" alt="poster-1">
+                        <img src="../../../../../assets/poster-2.png" alt="poster-1">
+                        <img src="../../../../../assets/poster-2.png" alt="poster-1">
+                        <img src="../../../../../assets/poster-2.png" alt="poster-1">
+                       </div>
+                    </div>
+                    
+                    <div class="follow">
+                        <h2>Follow us</h2>
+                        <p>Let us move together</p>
+                        <div>
+                        <i class="fab fa-facebook"></i>
+                        <i class="fab fa-whatsapp"></i>
+                        <i class="fab fa-instagram"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="rights flex-row">
+                    <h4 class="text-grey">
+                        <p>
+                            Copyright © 2021 cavendish university of zambia, Student forum
+                        </p>
+                    </h4>
+                </div>
+                <div class="move-up">
+                    <span><i class="fas fa-arrow-circle-up fa-2x"></i></span>
+                </div>
+            </div>
+        </footer>
+        <!--------x-----------Site-Footer-------x----------->
+    
+        <!--------------Java script file----------------->
+        <!----------------JQuery 3.6.0-------------------->
+        <script src="../../../../../js/min.v3.6.0 .js"></script>
+    
+        <!--------Owl-Carsoul-JQuery-->
+        <script src="../../../../../js/owl.carousel.min.js"></script>
+        
+        <script src="../../../../../js/main.js"></script>
+        <!----x----------Java script file---------------x-->
+
+        <!----------------Java-In-Here---------------------------->
+        <script src="./js/main.js"></script>
+        <script src="./js/for.js"></script>
+        <script src="./js/message.js"></script>
+        <!----------------Java-In-Here---------------------------->
+
